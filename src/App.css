@@ -91,6 +91,7 @@ header .logo img {
   padding: 5px;
   margin-left: 10px;
   width: 100%;
+  font-family: "Oswald";
 }
 
 header .save {
@@ -107,6 +108,7 @@ header .profile {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: "Oswald";
 }
 
 header .profile img {
