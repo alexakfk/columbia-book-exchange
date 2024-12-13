@@ -4,10 +4,11 @@ import Home from "./Home";
 import SellBook from "./SellBook";
 import UserProfile from "./UserProfile";
 import BookListing from "./BookListing";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,11 +23,13 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Home />
-      <SellBook />
-      <UserProfile />
-      <BookListing />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sell-book" element={<SellBook />} />
+        <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/book-listing" element={<BookListing />} />
+      </Routes>
+    </Router>
   );
 }
 
