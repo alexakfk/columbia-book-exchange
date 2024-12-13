@@ -36,3 +36,261 @@
     transform: rotate(360deg);
   }
 }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between; /* Separates logo from the right section */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+}
+
+header .logo img {
+  width: 65%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between search bar, save icon, and profile */
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.search-bar i {
+  color: #aaa;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 5px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+header .save {
+  background-color: white;
+  color: #0077cc;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  margin: 20px;
+}
+
+aside.sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+aside.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+aside.sidebar .tag {
+  text-align: left;
+}
+
+aside.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+aside.sidebar p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+section.main-content {
+  flex: 1;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-options select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+.book-cover {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seller-avatar {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background-color: #fff;
+  z-index: 5; /* Ensure avatar stays above other elements */
+}
+
+.seller-name {
+  position: absolute;
+  bottom: -65px; /* Position below the avatar */
+  right: 0px; /* Aligns name with the avatar */
+  width: 80px; /* Optional: fixed width for alignment */
+  text-align: center; /* Centers the text */
+  font-size: 12px;
+  color: #333;
+  background: #fff; /* Optional: Add background for contrast */
+  border-radius: 4px; /* Optional: Rounded edges */
+  z-index: 10; /* Ensure the name doesn't overlap the avatar */
+}
+
+.seller-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 35px 15px 10px; /* Increased padding to account for avatar placement */
+  text-align: left;
+}
+
+.book-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.book-info .author {
+  font-size: 14px;
+  color: #0077cc;
+  margin: 0 0 10px;
+}
+
+.status-price-container {
+  display: flex;
+  justify-content: space-between; /* Aligns status and price */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.book-info .status {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f3f3f3;
+  color: #0077cc;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #0077cc;
+  border: 1px solid #0077cc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
