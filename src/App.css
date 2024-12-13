@@ -296,3 +296,54 @@ footer {
   background-color: #0077cc;
   color: #fff;
 }
+
+/* Sell Book Styles */
+
+.form-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Oswald";
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.sell-book-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-family: "Oswald";
+}
