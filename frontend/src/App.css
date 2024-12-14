@@ -91,6 +91,7 @@ header .logo img {
   padding: 5px;
   margin-left: 10px;
   width: 100%;
+  font-family: "Oswald";
 }
 
 header .save {
@@ -107,6 +108,7 @@ header .profile {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: "Oswald";
 }
 
 header .profile img {
@@ -293,4 +295,154 @@ footer {
 .pagination button:hover {
   background-color: #0077cc;
   color: #fff;
+}
+
+/* Sell Book Styles */
+
+.form-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Oswald";
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.sell-book-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: "Oswald";
+}
+
+.required-asterisk {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0.25rem;
+  font-family: "Roboto";
+}
+
+.tag-selected {
+  background-color: #0077cc;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0.25rem;
+  font-family: "Roboto";
+}
+
+.add-tag {
+  background-color: transparent;
+  border: 1px dashed #007bff; /* Dashed border for add button */
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.input-note {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  color: #757575;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 1rem; */
+  gap: 3rem;
+}
+
+.save-button {
+  background-color: #0077cc;
+  color: white;
+  font-family: "Oswald";
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.cancel-button {
+  background-color: #757575;
+  color: white;
+  font-family: "Oswald";
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.crumb-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.crumb {
+  text-decoration: none;
+  color: black;
+}
+
+.crumb:hover {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.crumb-separator {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.current-crumb,
+.crumb,
+.crumb-separator {
+  font-family: "Oswald", sans-serif;
 }
