@@ -53,8 +53,8 @@ header.navbar {
   justify-content: space-between; /* Separates logo from the right section */
   align-items: center;
   padding: 10px 20px;
-  background-color: #0077cc;
-  color: #fff;
+  background-color: white;
+  border: 1px solid #ddd;
 }
 
 header .logo img {
@@ -95,8 +95,8 @@ header .logo img {
 }
 
 header .save {
-  background-color: white;
-  color: #0077cc;
+  background-color: #eeeeee;
+  color: #497dcb;
   padding: 12px;
   border-radius: 50%;
   display: flex;
@@ -249,7 +249,7 @@ section.main-content {
 
 .book-info .author {
   font-size: 14px;
-  color: #0077cc;
+  color: #497dcb;
   margin: 0 0 10px;
 }
 
@@ -270,7 +270,7 @@ section.main-content {
   font-size: 16px;
   font-weight: bold;
   background-color: #f3f3f3;
-  color: #0077cc;
+  color: #497dcb;
   padding: 5px 10px;
   border-radius: 20px;
 }
@@ -278,7 +278,7 @@ section.main-content {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #0077cc;
+  background-color: #497dcb;
   color: #fff;
 }
 
@@ -286,14 +286,14 @@ footer {
   margin: 0 5px;
   padding: 5px 10px;
   background-color: #fff;
-  color: #0077cc;
-  border: 1px solid #0077cc;
+  color: #497dcb;
+  border: 1px solid #497dcb;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .pagination button:hover {
-  background-color: #0077cc;
+  background-color: #497dcb;
   color: #fff;
 }
 
@@ -369,7 +369,7 @@ select {
 }
 
 .tag-selected {
-  background-color: #0077cc;
+  background-color: #497dcb;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 15px;
@@ -382,8 +382,8 @@ select {
 
 .add-tag {
   background-color: transparent;
-  border: 1px dashed #007bff;
-  color: #007bff;
+  border: 1px dashed #497dcb;
+  color: #497dcb;
   padding: 0.5rem 1rem;
   border-radius: 16px;
   cursor: pointer;
@@ -403,7 +403,7 @@ select {
 }
 
 .save-button {
-  background-color: #0077cc;
+  background-color: #497dcb;
   color: white;
   font-family: "Oswald";
   border: none;
@@ -437,7 +437,7 @@ select {
 
 .crumb:hover {
   text-decoration: none;
-  color: #0077cc;
+  color: #497dcb;
 }
 
 .crumb-separator {
@@ -461,6 +461,7 @@ select {
   left: 0;
   position: absolute;
   border: 1px solid #ddd;
+  border-top: none;
   box-sizing: border-box;
 }
 
@@ -472,7 +473,7 @@ select {
 }
 
 .how-it-works {
-  background-color: #0077cc;
+  background-color: #497dcb;
   color: white;
   padding: 40px 20px;
 }
@@ -498,6 +499,7 @@ select {
   font-size: 0.9em;
   margin: 10px 0;
   line-height: 1.4;
+  text-align: center;
 }
 
 .inline-image {

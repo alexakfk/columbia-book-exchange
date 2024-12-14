@@ -64,19 +64,17 @@ function SellBook() {
       <div className="page-layout">
         <SellBookSidebar />
         <div className="content-area">
-          <div className="breadcrumb-container">
-            <nav aria-label="breadcrumb">
-              <ol className="crumb-list">
-                <li>
-                  <Link to="/" className="crumb">
-                    Home
-                  </Link>
-                </li>
-                <li className="crumb-separator">&gt;</li>
-                <li className="current-crumb">Sell a Book</li>
-              </ol>
-            </nav>
-          </div>
+          <nav aria-label="breadcrumb">
+            <ol className="crumb-list">
+              <li>
+                <Link to="/" className="crumb">
+                  Home
+                </Link>
+              </li>
+              <li className="crumb-separator">&gt;</li>
+              <li className="current-crumb">Sell a Book</li>
+            </ol>
+          </nav>
           <h2 className="page-title">Sell a Book</h2>
           <div className="form-container">
             <div className="form-section">

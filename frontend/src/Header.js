@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src={require("./images/logo.png")} alt="logo" />
+        <img src={require("./images/logo-blue.png")} alt="logo" />
       </div>
 
       <div className="nav-right">
