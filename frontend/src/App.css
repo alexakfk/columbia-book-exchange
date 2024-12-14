@@ -333,9 +333,15 @@ select {
 }
 
 .sell-book-page {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.page-layout {
+  display: flex;
+  width: 100%;
 }
 
 .page-title {
@@ -376,7 +382,7 @@ select {
 
 .add-tag {
   background-color: transparent;
-  border: 1px dashed #007bff; /* Dashed border for add button */
+  border: 1px dashed #007bff;
   color: #007bff;
   padding: 0.5rem 1rem;
   border-radius: 16px;
@@ -393,7 +399,6 @@ select {
 .form-actions {
   display: flex;
   justify-content: center;
-  /* margin-top: 1rem; */
   gap: 3rem;
 }
 
@@ -445,4 +450,91 @@ select {
 .crumb,
 .crumb-separator {
   font-family: "Oswald", sans-serif;
+}
+
+/* Sell Book Sidebar Styles */
+.sidebar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  left: 0;
+  position: absolute;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.user-profile {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.how-it-works {
+  background-color: #0077cc;
+  color: white;
+  padding: 40px 20px;
+}
+
+.user-profile h2,
+.how-it-works h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.user-profile p {
+  font-size: 0.9em;
+  margin: 10px 0;
+  line-height: 1.4;
+  font-family: "Roboto";
+}
+
+.how-it-works p {
+  font-size: 0.9em;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.inline-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.sell-book-page .content-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  margin-left: 240px;
+}
+
+.sell-book-page .form-section {
+  margin-bottom: 20px;
+}
+
+.sell-book-page .form-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sell-book-page .form-actions {
+  margin-top: 20px;
+}
+
+.sell-book-page .cancel-button,
+.sell-book-page .save-button {
+  padding: 10px 20px;
+  margin: 5px;
 }
