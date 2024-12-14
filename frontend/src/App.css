@@ -478,6 +478,14 @@ select {
   padding: 40px 20px;
 }
 
+.how-it-works h2 {
+  text-align: center;
+}
+
+.user-profile h2 {
+  text-align: left;
+}
+
 .user-profile h2,
 .how-it-works h2 {
   font-size: 1.5em;
@@ -485,7 +493,6 @@ select {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
   font-family: "Oswald";
-  text-align: center;
 }
 
 .user-profile p {
