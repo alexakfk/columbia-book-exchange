@@ -402,7 +402,7 @@ select {
   gap: 3rem;
 }
 
-.save-button {
+.save-button, .sell-book-button {
   background-color: #497dcb;
   color: white;
   font-family: "Oswald";
@@ -478,7 +478,6 @@ select {
   padding: 40px 20px;
 }
 
-.user-profile h2,
 .how-it-works h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -486,6 +485,16 @@ select {
   padding-bottom: 5px;
   font-family: "Oswald";
   text-align: center;
+}
+
+.user-profile h2 {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #ddd; */
+  padding-bottom: 5px;
+  font-family: "Oswald";
+  text-align: left;
 }
 
 .user-profile p {
@@ -540,3 +549,60 @@ select {
   padding: 10px 20px;
   margin: 5px;
 }
+
+
+/* Seller Profile Styling */
+.seller-profile-page {
+  display: flex;
+  width: 100%;
+}
+
+.seller-profile-page .content-area {
+  width: 80%;
+}
+
+.seller-profile-page .title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.seller-profile-page .page-title {
+  text-align: left;
+}
+
+.react-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-container {
+  width: 100%;
+  background: #D9D9D9;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.cover-image {
+  vertical-align: middle;
+  width: 17%;
+  height: 17%;
+}
+
+.book-content {
+  margin-left: 20px;
+}
+
+.react-icon-bookcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+
