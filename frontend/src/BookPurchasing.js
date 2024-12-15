@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/book-purchasing.css'; // Import the CSS file
+import './styles/book-purchasing.css'; 
 
 const BookPurchasing = () => {
   return (
