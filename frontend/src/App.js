@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import SellBook from "./SellBook";
+import BookPurchasing from "./BookPurchasing"; 
 import UserProfile from "./UserProfile";
 import BookListing from "./BookListing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sell-book" element={<SellBook />} />
+        <Route path="/book-purchasing" element={<BookPurchasing />} />
         <Route path="/user-profile" element={<UserProfile />} />
         <Route path="/book-listing" element={<BookListing />} />
       </Routes>
