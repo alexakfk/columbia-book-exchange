@@ -579,17 +579,19 @@ select {
 }
 
 .book-container {
-  width: 100%;
+  width: 99%;
   background: #D9D9D9;
   padding: 20px;
   display: flex;
+  align-items: center;  
+  justify-content: flex-start;  
+  margin-bottom: 20px;
   position: relative;
 }
 
 .cover-image {
-  vertical-align: middle;
   width: 17%;
-  height: 17%;
+  height: auto;
 }
 
 .book-content {
@@ -600,9 +602,26 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 25px;
-  right: 25px;
+  position: absolute;  
+  top: 25px; 
+  right: 27px;  
+}
+
+.book-content .tag-selected {
+  background-color: #497dcb;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  margin-left: 0rem;
+  font-family: "Roboto";
+  display: inline-flex;  
+  justify-content: center;
+  align-items: center;
+  max-width: auto; 
+  white-space: nowrap;
 }
 
 
