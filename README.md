@@ -1,5 +1,10 @@
 # Columbia Book Exchange, Team 29
 
+- Zaina Qamar, zoq2003
+- Amrita Pal, ap4312
+- Alexa Kafka, ak5124
+- Shreya Chennamadhava, sc4949
+
 Welcome to the Columbia Book Exchange project repository! Both our frontend and backend live under this repo.
 
 Our backend requires `flask` and `flask-cors`, so make sure that these are installed. If you have
