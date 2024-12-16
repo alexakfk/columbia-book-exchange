@@ -1,11 +1,12 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="navbar">
-      <div className="logo">
+      <Link className="logo" to="/">
         <img src={require("./images/logo-blue.png")} alt="logo" />
-      </div>
+      </Link>
 
       <div className="nav-right">
         <div className="search-bar">
