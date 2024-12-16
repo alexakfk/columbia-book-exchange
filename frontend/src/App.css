@@ -109,6 +109,8 @@ header .profile {
   align-items: center;
   gap: 10px;
   font-family: "Oswald";
+  text-decoration: none;
+  color: black;
 }
 
 header .profile img {
@@ -435,6 +437,7 @@ select {
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .crumb-list {

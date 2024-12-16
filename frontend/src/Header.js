@@ -18,10 +18,10 @@ function Header() {
           <i className="fa-solid fa-bookmark"></i>
         </div>
 
-        <div className="profile">
+        <Link className="profile" to="/user-profile">
           <span>David Smith</span>
           <img src={require("./images/avatar.png")} alt="Profile" />
-        </div>
+        </Link>
       </div>
     </header>
   );

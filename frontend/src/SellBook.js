@@ -1,15 +1,18 @@
 import "./App.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SellBookSidebar from "./SellBookSidebar";
+import axios from "axios";
 
 function SellBook() {
   const [formData, setFormData] = useState({
+    seller_id: "ds123@columbia.edu",
     title: "",
     author: "",
     publisher: "",
     publicationYear: "",
-    translator: "",
+    translators: "",
+    edition: "",
     isbn: "",
     condition: "",
     price: "",
@@ -18,7 +21,7 @@ function SellBook() {
     tags: [],
   });
 
-  const [tags, setTags] = useState([
+  const tags = [
     "LitHum",
     "CC",
     "First Year Writing",
@@ -30,7 +33,48 @@ function SellBook() {
     "Play",
     "Paperback",
     "Hard Cover",
-  ]);
+  ];
+
+  const navigate = useNavigate();
+
+  const saveBook = async () => {
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:5000/save_book",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Book saved successfully:", response.data);
+      alert("Book saved successfully!");
+      setFormData({
+        title: "",
+        author: "",
+        publisher: "",
+        publicationYear: "",
+        translators: "",
+        edition: "",
+        isbn: "",
+        condition: "",
+        price: "",
+        description: "",
+        coverImage: null,
+        tags: [],
+      });
+      navigate("/");
+    } catch (error) {
+      console.error("Error saving book:", error);
+      alert("Failed to save book.");
+    }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    saveBook();
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -51,12 +95,6 @@ function SellBook() {
         ? prevData.tags.filter((t) => t !== tag)
         : [...prevData.tags, tag],
     }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Submitted data:", formData);
-    // Perform API call or further logic here
   };
 
   return (
@@ -101,8 +139,8 @@ function SellBook() {
                 Translator(s)
                 <input
                   type="text"
-                  name="translator"
-                  value={formData.translator}
+                  name="translators"
+                  value={formData.translators}
                   onChange={handleChange}
                 />
               </label>
@@ -206,10 +244,14 @@ function SellBook() {
             </div>
           </div>
           <div className="form-actions">
-            <button type="button" className="cancel-button">
+            <Link className="cancel-button" to="/">
               Cancel
-            </button>
-            <button type="submit" className="save-button">
+            </Link>
+            <button
+              type="submit"
+              className="save-button"
+              onClick={handleSubmit}
+            >
               Save Listing
             </button>
           </div>
