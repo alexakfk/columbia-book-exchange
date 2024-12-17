@@ -1,17 +1,22 @@
+// FINAL VERSION OF USER PROFILE SIDEBAR
+
+import { MdOutlineEdit } from "react-icons/md";
+
 function SellBookSidebar() {
   return (
     <div className="sidebar">
       <div className="user-profile">
         <h2>
-          User Profile{" "}
+          User Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <MdOutlineEdit />
+        </h2>
+        <p>
+          <strong>Name:</strong> David Smith&nbsp;&nbsp;&nbsp;&nbsp;
           <img
             src={require("./images/avatar.png")}
             alt="Profile"
             className="inline-image"
           />
-        </h2>
-        <p>
-          <strong>Name:</strong> David Smith{" "}
         </p>
         <p>
           <strong>Contact me at:</strong> ds123@columbia.edu

@@ -4,7 +4,18 @@ import json
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, 
+     resources={
+         r"/api/get_book_listings": { 
+             "origins": ["http://localhost:3001"] 
+             }
+        }, 
+     supports_credentials=True)
+
+book_listings = []
+
+with open('book_listings.json','r') as f:
+    book_listings = json.load(f)
 
 books_on_sale = []
 
