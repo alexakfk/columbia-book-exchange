@@ -109,6 +109,8 @@ header .profile {
   align-items: center;
   gap: 10px;
   font-family: "Oswald";
+  text-decoration: none;
+  color: black;
 }
 
 header .profile img {
@@ -121,6 +123,20 @@ main {
   flex: 1;
   display: flex;
   margin: 20px;
+}
+
+.sell-button {
+  background-color: #497dcb;
+  color: white;
+  font-family: "Oswald";
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  text-decoration: none;
 }
 
 aside.sidebar {
@@ -163,6 +179,7 @@ section.main-content {
   flex: 1;
   padding: 20px;
   padding-top: 0px;
+  margin-left: 200px;
 }
 
 .filter-options {
@@ -420,6 +437,7 @@ select {
   border-radius: 4px;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .crumb-list {
@@ -479,12 +497,20 @@ select {
 }
 
 .how-it-works h2 {
+  text-align: center;
+}
+
+.user-profile h2 {
+  text-align: left;
+}
+
+.user-profile h2,
+.how-it-works h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
   font-family: "Oswald";
-  text-align: center;
 }
 
 .user-profile h2 {
@@ -624,4 +650,6 @@ select {
   white-space: nowrap;
 }
 
-
+.user-profile.tag {
+  font-family: 20px;
+}
