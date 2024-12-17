@@ -1,3 +1,5 @@
+// FINAL VERSION OF USER PROFILE PAGE
+
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -6,51 +8,42 @@ import { FaPlus } from "react-icons/fa6";
 import BookCard from "./BookCard";
 
 function UserProfile() {
-  const [bookList, setBookList] = useState([]);
-
-  const makeAPICall = async () => {
-    console.log("makeAPICall try statement entered")
-    fetch('/api/get_book_listings')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        return response.json()
-      })
-      .then(data => {
-        console.log("sup")
-        console.log(data)
-        console.log("bye")
-      })
-      .catch(error => {
-        console.error('Error fetching book listings:', error);
-      })
-
-    // try {
-    //   console.log("makeAPICall try statement entered")
-    //   const response = await fetch('/api/get_book_listings');
-
-    //   if (!response.ok) {
-    //     throw new Error(`HTTP error! Status: ${response.status}`);
-    //   }
-
-    //   console.log({ response })
-    //   console.log("printed response")
-    //   console.log(response.json())
-    //   const data = await response.json();
-    //   setBookList(data)
-    //   console.log({ data })
-    // }
-    // catch(error) {
-    //   console.error('Error fetching book listings:', error);
-    // }
-  }
-
-  useEffect(() => {
-    console.log("entering use effect");
-    makeAPICall();
-  }, []);
+  const bookList = [
+    {
+      "image": "./images/cover1.png",
+      "altText": "Plato's Republic",
+      "title": "The Republic",
+      "author": "Plato",
+      "isbn": "9781503379985",
+      "sellingPrice": "7.00",
+      "originalPrice": "16.96",
+      "condition": "Lightly Used",
+      "description": "I read this book for the fall semester of my CC class.",
+      "tags": [
+        "CC",
+        "Core",
+        "Humanities",
+        "Paperback"
+      ]
+    },
+    {
+      "image": "./images/cover2.png",
+      "altText": "Homer's The Iliad",
+      "title": "The Iliad",
+      "author": "Homer",
+      "isbn": "9780226470498",
+      "sellingPrice": "4.99",
+      "originalPrice": "10.99",
+      "condition": "New (no annotations)",
+      "description": "I read this book for fall semester LitHum.",
+      "tags": [
+        "LitHum",
+        "Core",
+        "Humanities",
+        "Paperback"
+      ]
+    }
+  ]
 
   return (
     <div className="seller-profile-page">

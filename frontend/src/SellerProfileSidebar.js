@@ -1,3 +1,5 @@
+// FINAL VERSION OF USER PROFILE SIDEBAR
+
 import { MdOutlineEdit } from "react-icons/md";
 
 function SellBookSidebar() {

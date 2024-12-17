@@ -1,3 +1,5 @@
+// FINAL VERSION OF USER PROFILE BOOK CARD
+
 import "./App.css";
 import { MdOutlineEdit } from "react-icons/md";
 import { FaRegTrashAlt } from "react-icons/fa";
